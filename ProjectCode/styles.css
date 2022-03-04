@@ -1,0 +1,397 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+input[type='text'] {
+  border-radius: 5px;
+  border-color: cyan;
+  height: 30px;
+}
+
+label {
+  font-weight: 800;
+}
+/* ===================================================================================================Pages Body's*/
+.bodyHome {
+  animation-name: background;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.bodyMed {
+  background: url('/images/medical.jpg');
+  background-size: contain;
+}
+
+.bodyProject {
+  background: url('/images/data.jpg');
+  background-size: contain;
+  background-position: 50%;
+}
+
+@keyframes background {
+  0% {
+    background: url('/images/medical.jpg');
+    background-size: contain;
+  }
+  50% {
+    background: url('/images/data.jpg');
+    background-size: contain;
+  }
+  100% {
+    background: url('/images/medical.jpg');
+    background-size: contain;
+  }
+}
+
+.box1 {
+  position: relative;
+  top: 50px;
+  left: -38px;
+  overflow: hidden;
+}
+
+.box2 {
+  position: relative;
+  left: 32.35%;
+  margin-top: 100px;
+  overflow: hidden;
+}
+
+.boxButton {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  color: white;
+  background-color: black;
+}
+
+.boxButtonLeft {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.boxButtonRight {
+  float: right;
+  right: 10px;
+  top: 10px;
+}
+
+.boxButton:hover {
+  animation-name: hoverColor;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hoverColor {
+  100% {
+    color: black;
+    background-color: white;
+  }
+}
+
+.box1Button {
+  left: 15px;
+}
+
+.boxP {
+  position: relative;
+  left: 150px;
+  font-weight: bold;
+  word-spacing: 5px;
+  font-size: 18px;
+  color: black;
+}
+
+.boxSkew {
+  transform: skewX(-20deg);
+}
+
+.center {
+  margin: 0px auto 0px auto;
+  text-align: center;
+}
+
+.heading {
+  margin-top: 10px;
+  color: white;
+}
+
+.headingProjectPage {
+  margin-top: 10px;
+  color: white;
+  background-color: black;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.imgMedical {
+  position: absolute;
+  top: -120px;
+  left: 20px;
+  height: 400px;
+  width: 105%;
+  z-index: -1;
+  transform: skewX(20deg);
+  filter: blur(3px);
+}
+
+.imgProject {
+  position: absolute;
+  z-index: -1;
+  top: -5px;
+  transform: skewX(20deg);
+  filter: blur(3px);
+}
+
+.medFormSubmit {
+  position: relative;
+  left: 70%;
+}
+
+.parallelogramLeft {
+  position: relative;
+  left: 0px;
+  animation-name: parallLeft;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: blue;
+}
+
+@keyframes parallLeft {
+  50% {
+    left: 82.5%;
+  }
+  100% {
+    left: 0px;
+  }
+}
+
+.parallelogramCenter {
+  position: relative;
+  left: 41%;
+  animation-name: parallCenter;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: white;
+  border-color: blue;
+}
+
+@keyframes parallCenter {
+  25% {
+    left: 82.5%;
+  }
+  75% {
+    left: 0px;
+  }
+}
+
+.parallelogramRight {
+  position: relative;
+  left: 82.5%;
+  animation-name: parallRight;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background-color: black;
+  border-color: white;
+}
+
+@keyframes parallRight {
+  50% {
+    left: 0;
+  }
+}
+
+.pCenter {
+  position: absolute;
+  left: 45%;
+  text-align: center;
+}
+
+.pLeft {
+  margin-left: 7%;
+}
+
+.pRight {
+  float: right;
+  margin-right: 7%;
+}
+
+/* =============================================================================================Project Form */
+
+.projectForm {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: solid 1px;
+  border-radius: 10px;
+  background-color: grey;
+  width: 700px;
+  height: 100px;
+}
+
+.projectFormAbsolute {
+  position: absolute;
+  top: 20px;
+  text-align: left;
+}
+
+.projectName {
+  left: 10px;
+}
+
+.projectLocation {
+  left: 30%;
+}
+
+.projectSize {
+  left: 60%;
+  top: 10px;
+}
+
+.projectFormSubmit {
+  height: 50px;
+  left: 80%;
+}
+
+/* ===========================================================================================================IDs */
+
+.projectCircle1 {
+  top: 20px;
+  left: 40px;
+  background-color: rgb(10, 219, 115);
+  border: 2px solid rgb(118, 10, 219);
+  animation-name: leftCircles;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.projectCircle2 {
+  top: 20px;
+  left: 200px;
+  background-color: rgb(10, 219, 191);
+  border: 2px solid rgb(10, 219, 115);
+  animation-name: leftCircles;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes leftCircles {
+  50% {
+    top: 250px;
+  }
+}
+
+.projectCircle3 {
+  bottom: 20px;
+  right: 200px;
+  background-color: rgb(10, 118, 219);
+  border: 2px solid rgb(10, 219, 191);
+  animation-name: rightCircles;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.projectCircle4 {
+  bottom: 20px;
+  right: 40px;
+  background-color: rgb(118, 10, 219);
+  border: 2px solid rgb(10, 118, 219);
+  animation-name: rightCircles;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rightCircles {
+  50% {
+    bottom: 250px;
+  }
+}
+
+#box {
+  height: 200px;
+  width: 70%;
+  border-style: solid;
+}
+
+#boxContent {
+  position: relative;
+  left: 38px;
+  transform: skewX(20deg);
+  margin-top: 60px;
+}
+
+#circle {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+}
+
+#footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(73, 73, 73);
+  margin-top: -16px;
+  position: absolute;
+  bottom: 0;
+  border: solid 1px;
+}
+
+#medContainer {
+  /* border-style: solid; */
+  width: 90%;
+  height: 55%;
+  position: relative;
+  margin-top: 60px;
+}
+
+#medForm {
+  border: solid 1px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: grey;
+  text-align: left;
+  padding: 10px 20px 10px 20px;
+}
+
+#parallelogram {
+  height: 70px;
+  width: 200px;
+  transform: skewX(-20deg);
+  border-style: solid;
+}
+
+#parallelogramContainer {
+  display: flex;
+  height: 95%;
+  justify-content: space-between;
+  flex-direction: column;
+  /* border: solid blue; */
+  margin-top: 10px;
+  margin-left: 28px;
+  width: 95%;
+}
+
+#projectContainer {
+  /* border: solid 1px; */
+  border-radius: 10px;
+  position: relative;
+  top: 38%;
+  transform: translateY(-50%);
+  height: 350px;
+}
